@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+{% block title %}Read{{ title }}{% endblock %}
+{% block body %}
+<h1>{{ title }}</h1>
+<div>
+<p>
+    Below is a sample of “Lorem ipsum dolor sit” dummy copy
+    text often used to show font face samples
+    , for page layout and design as sample layout tex
+    t by printers, graphic designers, Web d
+    esigners, people creating Microsoft Word
+</p>
+<p>
+    Below is a sample of “Lorem ipsum dolor sit” dummy copy
+    text often used to show font face samples
+    , for page layout and design as sample layout tex
+    t by printers, graphic designers, Web d
+    esigners, people creating Microsoft Word
+</p>
+<p>
+    Below is a sample of “Lorem ipsum dolor sit” dummy copy
+    text often used to show font face samples
+    , for page layout and design as sample layout tex
+    t by printers, graphic designers, Web d
+    esigners, people creating Microsoft Word
+</p>
+</div>
+<h2>Commentaires ( {{ comments|length }} ) </h2>
+<ul>
+    {% for comment in comments %}
+    <li>{{ comment }}</li>
+    {% endfor %}
+</ul>
+
+{% endblock %}
