@@ -2,11 +2,12 @@
 <html lang="en">
 
     <head>
-        <title>{% block title %}Welcome to the SpaceBar{% endblock %}</title>
+        <title>{% block title %}Ma fille {% endblock %}</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
         {% block stylesheets %}
+            <link href="https://fonts.googleapis.com/css?family=Bevan|Press+Start+2P" rel="stylesheet">
             <link rel="stylesheet" href="{{ asset('css/font-awesome.css') }}">
             <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
@@ -15,7 +16,7 @@
 
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark navbar-bg mb-5">
-            <a style="margin-left: 75px;" class="navbar-brand space-brand" href="#">The Space Bar</a>
+            <a style="margin-left: 75px;" class="navbar-brand space-brand" href="{{ path('app_homepage') }}">Femmes Algériennes Libres</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -29,13 +30,13 @@
                      </li>
                    </ul>
                 <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Rechercher sur le site" aria-label="Search">
                     <button class="btn btn-info my-2 my-sm-0" type="submit">Search</button>
                 </form>
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item dropdown" style="margin-right: 75px;">
                         <a class="nav-link dropdown-toggle" href="http://profgo.org" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <img class="nav-profile-img rounded-circle" src="images/astronaut-profile.png">
+                  <img class="nav-profile-img rounded-circle" src="{{ asset('images/astronaut-profile.png') }}">
                 </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <a class="dropdown-item" href="#">Profile</a>
@@ -51,7 +52,7 @@
 
         <footer class="footer">
             <div class="container text-center">
-                <span class="text-muted">Made with <i class="fa fa-heart" style="color: red;"></i> by Nas <a href="https://knpuniversity.com"><i class="fa fa-home"> </i> H</a></span>
+                <span class="text-muted">Made with <i class="fa fa-heart" style="color: red;"></i>  by Laroui Nacim at  <a href="https://profgo.org"><i class="fa fa-home" style="color:#7f7f7f"> </i> </a></span>
             </div>
         </footer>
 

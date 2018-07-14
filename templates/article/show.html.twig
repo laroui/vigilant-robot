@@ -1,4 +1,4 @@
-{% extends 'base.html.twig' %}
+{% extends 'base.html.twig'%}
 
 {% block title %}Read: {{ title }}{% endblock %}
 
@@ -17,9 +17,8 @@
                                 <span class="align-left article-details"><img class="article-author-img rounded-circle" src="{{ asset('images/alien-profile.png') }}"> GUEZI Katia </span>
                                 <span class="pl-2 article-details"> 3 hours ago</span>
                                 <span class="pl-2 article-details">
-                                <span class="js-like-article-count">5</span>
-
-                            </span>
+                                    <span class="js-like-article-count">5 </span>
+                                    <a href="#" class="fa fa-heart-o like-article js-like-article"></a> </span>
                             </div>
                         </div>
                     </div>
@@ -68,7 +67,7 @@
 
                             <div class="row mb-5">
                                 <div class="col-sm-12">
-                                    <img class="comment-img rounded-circle" src="">
+                                    <img class="comment-img rounded-circle" src="{{ asset('images/meteor-shower.jpg') }}">
                                     <div class="comment-container d-inline-block pl-3 align-top">
                                         <span class="commenter-name">Amy Oort</span>
                                         <div class="form-group">
@@ -82,7 +81,7 @@
                             {% for comment in comments %}
                                 <div class="row">
                                     <div class="col-sm-12">
-                                        <img class="comment-img rounded-circle" src="{{ asset('images/alien-profile.png') }}">
+                                        <img class="comment-img rounded-circle" src="{{ asset('images/meteor-shower.jpg') }}">
                                         <div class="comment-container d-inline-block pl-3 align-top">
                                             <span class="commenter-name">Mike Ferengi</span>
                                             <br>

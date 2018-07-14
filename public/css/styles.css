@@ -10,7 +10,7 @@ html {height:100%}
 /* NAVIGATION */
 
 .navbar-bg {
-    background: url('../images/space-nav.jpg');
+    background-color:darkgray;
     background-size: 80%;
 }
 
@@ -228,6 +228,8 @@ html {height:100%}
 /* FOOTER */
 
 .footer {
+    font-family: 'Press Start 2P', cursive;
+    font-size:12px;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -235,4 +237,8 @@ html {height:100%}
   line-height: 60px; /* Vertically center the text there */
   background-color: #fff;
   margin-top: 10px;
+}
+
+.rounded-circle {
+    background: #000;
 }
