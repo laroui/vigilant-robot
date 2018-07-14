@@ -7,6 +7,7 @@
         "ext-iconv": "*",
         "sensio/framework-extra-bundle": "^5.2",
         "sensiolabs/security-checker": "^4.1",
+        "symfony/asset": "^4.1",
         "symfony/console": "^4.1",
         "symfony/flex": "^1.0",
         "symfony/framework-bundle": "^4.1",
@@ -15,7 +16,9 @@
         "symfony/yaml": "^4.1"
     },
     "require-dev": {
+        "symfony/debug-pack": "^1.0",
         "symfony/dotenv": "^4.1",
+        "symfony/profiler-pack": "^1.0",
         "symfony/web-server-bundle": "^4.1"
     },
     "config": {
