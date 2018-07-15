@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f75bec23-1486-44c8-9017-ef2f5445a3bd" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/article/create.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/symfony2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/symfony2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/doctrine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/doctrine.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/public/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/templates/homepage.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/public/templates/homepage.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ArticleController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataFixtures/ArticleFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/ArticleFixtures.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/article/homepage.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/article/homepage.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/article/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/article/show.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-    </list>
+    <list default="true" id="f75bec23-1486-44c8-9017-ef2f5445a3bd" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -330,12 +318,12 @@
       <updated>1531507361097</updated>
       <workItem from="1531507364826" duration="1377000" />
       <workItem from="1531508779603" duration="7788000" />
-      <workItem from="1531519039444" duration="28413000" />
+      <workItem from="1531519039444" duration="29013000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37578000" />
+    <option name="totallyTimeSpent" value="38178000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="203" y="246" width="1566" height="731" extended-state="0" />
