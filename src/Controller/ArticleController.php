@@ -9,14 +9,19 @@
 namespace App\Controller;
 
 
+use App\Entity\Article;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Doctrine\ORM\Tools\Setup;
+use Doctrine\Common\Persistence\ObjectManager;
 
 
 class ArticleController extends AbstractController
 {
+
     /**
      * @Route("/" ,name="app_homepage")
      */
@@ -25,17 +30,46 @@ class ArticleController extends AbstractController
         return $this->render('article/homepage.html.twig');
     }
     /**
-     * @Route("/news/{slug} ",name="article_show")
+     * @Route("/create",name="create")
      */
-    public function show($slug){
+    public function create(Request $request ,ObjectManager $manager){
+        dump($request);
+        if($request->request->count()>0){
+
+            $article = new Article();
+            $article->setTitle($request->request->get('title'))
+                    ->setContent($request->request->get('content'))
+                    ->setImage($request->request->get('image'))
+                     ->setCreatedAt(new \DateTime());
+            $manager->persist($article);
+            $manager->flush();
+            return $this->redirectToRoute('article_show',['id'=>$article->getID()]);
+        }
+
+
+
+        return $this->render('article/create.html.twig');
+    }
+
+    /**
+     * @Route("/news/{id} ",name="article_show")
+     */
+    public function show( $id ){
         $comments=[
             'Life is shit','Why not telling this ','But Who gives a fuck about this code ','Gonna go shower !! '
         ];
+        $repo=$this->getDoctrine()->getRepository(Article::class);
+
+
+            $articles=$repo->findById($id);
+
+
+
 
         return $this->render('article/show.html.twig',[
-
-            'title'=>ucwords(str_replace('_','',$slug)),
-            'comments'=>$comments
+            'id'=>$id,
+            'comments'=>$comments,
+            'article'=>$articles
         ]);
 
 
